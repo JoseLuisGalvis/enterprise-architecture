@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOGAF Landing Page</title>
+    <!-- CDN de Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Agregar esto en el <head> del documento -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex" href="#">
+          <img src="/images/logo.jpeg" alt="Logo" class="navbar-logo" />
+          <span class="navbar-text"
+            >Enterprise <br />
+            Architecture</span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" data-i18n="navbar.home" href="#hero"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-i18n="navbar.definition"
+                href="#definicion"
+                >¿Qué es TOGAF?</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-i18n="navbar.benefits" href="#beneficios"
+                >Beneficios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-i18n="navbar.fundamentals"
+                href="#fundamentos"
+                >Fundamentos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-i18n="navbar.adm" href="#adm"
+                >Ciclo ADM</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-i18n="navbar.resources" href="#recursos"
+                >Recursos</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button id="darkModeToggle" class="btn btn-outline-secondary me-2">
+              <i class="fas fa-moon" id="darkModeIcon"></i>
+            </button>
+            <select id="languageSelector" class="form-select">
+              <option value="en" data-i18n="navbar.language.en">English</option>
+              <option value="es" data-i18n="navbar.language.es">Español</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero" data-aos="zoom-in">
+      <div class="container min-vh-100">
+        <div class="row elevation" data-aos="fade-up">
+          <h1 data-i18n="hero.title">
+            Potencia la Transformación Empresarial con TOGAF
+          </h1>
+          <p data-i18n="hero.subtitle">
+            El marco líder para la arquitectura empresarial que impulsa la
+            alineación entre tecnología y estrategia de negocio.
+          </p>
+          <div class="d-flex justify-content-center">
+            <a
+              href="#definicion"
+              class="btn btn-primary me-2"
+              data-i18n="hero.discover"
+              >Descubre TOGAF</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Definición de TOGAF -->
+    <section id="definicion">
+      <div
+        class="container min-vh-100 d-flex flex-column align-items-center justify-content-center bg-white"
+      >
+        <div class="col-12 text-end">
+          <a href="#hero" class="btn btn-ea mt-5 mb-1 text-white"
+            >Ir al Inicio</a
+          >
+        </div>
+        <div class="row" id="quienes-somos">
+          <div
+            class="col-md-6 d-flex align-items-center justify-content-center"
+          >
+            <img
+              src="/images/togaf.jpeg"
+              alt=""
+              class="img-fluid mx-auto"
+              data-aos="flip-left"
+            />
+          </div>
+          <div
+            class="col-md-6 d-flex flex-column align-items-center justify-content-center"
+            data-aos="flip-right"
+            data-aos-duration="3000"
+          >
+            <h2 class="text-center mb-4" data-i18n="definition.title">
+              ¿Qué es TOGAF?
+            </h2>
+            <p data-i18n="definition.description1">
+              TOGAF (The Open Group Architecture Framework) es un marco de
+              trabajo ampliamente reconocido para el desarrollo y la gestión de
+              arquitecturas empresariales. Proporciona principios, herramientas
+              y metodologías para alinear los objetivos empresariales con las
+              capacidades tecnológicas.
+            </p>
+            <p data-i18n="definition.description2">
+              Más del 80% de las empresas Fortune 500 confían en TOGAF.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios">
+      <div
+        class="container d-flex flex-column align-items-center justify-content-center min-vh-100 bg-light"
+      >
+        <div class="col-12 text-end">
+          <a href="#hero" class="btn btn-ea mt-1 mb-1 text-white"
+            >Ir al Inicio</a
+          >
+        </div>
+        <div class="row">
+          <h2
+            class="text-center mt-5 mb-2"
+            data-i18n="benefits.title"
+            data-aos="zoom-in"
+          >
+            ¿Por qué adoptar TOGAF?
+          </h2>
+          <div
+            class="d-grid gap-4"
+            style="grid-template-columns: repeat(3, 1fr)"
+            data-aos="fade-up"
+          >
+            <div class="card text-center p-3">
+              <i class="bi bi-people"></i>
+              <h5 data-i18n="benefits.communication.title">Comunicación</h5>
+              <p data-i18n="benefits.communication.description">
+                Facilita la comunicación entre las partes interesadas.
+              </p>
+            </div>
+            <div class="card text-center p-3">
+              <i class="bi bi-diagram-3"></i>
+              <h5 data-i18n="benefits.structure.title">Estructura</h5>
+              <p data-i18n="benefits.structure.description">
+                Proporciona un enfoque estructurado para la transformación
+                empresarial.
+              </p>
+            </div>
+            <div class="card text-center p-3">
+              <i class="bi bi-cash"></i>
+              <h5 data-i18n="benefits.cost.title">Reducción de Costos</h5>
+              <p data-i18n="benefits.cost.description">
+                Optimiza procesos y recursos.
+              </p>
+            </div>
+            <div class="card text-center p-3">
+              <i class="bi bi-lightbulb"></i>
+              <h5 data-i18n="benefits.innovation.title">Innovación</h5>
+              <p data-i18n="benefits.innovation.description">
+                Fomenta nuevas oportunidades estratégicas.
+              </p>
+            </div>
+            <div class="card text-center p-3">
+              <i class="bi bi-bar-chart"></i>
+              <h5 data-i18n="benefits.performance.title">
+                Mejora del Rendimiento
+              </h5>
+              <p data-i18n="benefits.performance.description">
+                Ayuda a mejorar el desempeño general mediante la optimización de
+                recursos clave.
+              </p>
+            </div>
+            <div class="card text-center p-3">
+              <i class="bi bi-globe"></i>
+              <h5 data-i18n="benefits.global.title">Estándares Globales</h5>
+              <p data-i18n="benefits.global.description">
+                Promueve la implementación de estándares internacionales para
+                garantizar la interoperabilidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Fundamentos -->
+    <section id="fundamentos" class="py-5">
+      <div class="container py-5 bg-white">
+        <div class="col-12 text-end">
+          <a href="#hero" class="btn btn-ea mt-1 mb-1 text-white"
+            >Ir al Inicio</a
+          >
+        </div>
+        <div class="row">
+          <h2
+            class="text-center mb-5"
+            data-i18n="fundamentals.title"
+            data-aos="zoom-in"
+          >
+            Fundamentos de TOGAF
+          </h2>
+
+          <div class="row g-4" data-aos="fade-up">
+            <!-- Arquitectura de Negocio -->
+            <div class="col-md-6">
+              <div class="card card-hover h-100">
+                <div class="card-body">
+                  <div class="feature-icon">
+                    <i class="fas fa-building"></i>
+                  </div>
+                  <h3
+                    class="card-title h5"
+                    data-i18n="fundamentals.business.title"
+                  >
+                    Arquitectura de Negocio
+                  </h3>
+                  <p
+                    class="card-text text-muted"
+                    data-i18n="fundamentals.business.text"
+                  >
+                    Proporciona una representación del negocio, incluyendo
+                    procesos, funciones y objetivos estratégicos. Permite
+                    alinear las operaciones con la estrategia empresarial.
+                  </p>
+                  <ul class="detail-list">
+                    <li data-i18n="fundamentals.business.processes">
+                      <span class="detail-dot"></span>Procesos de negocio
+                    </li>
+                    <li data-i18n="fundamentals.business.organization">
+                      <span class="detail-dot"></span>Estructura organizacional
+                    </li>
+                    <li data-i18n="fundamentals.business.goals">
+                      <span class="detail-dot"></span>Objetivos estratégicos
+                    </li>
+                    <li data-i18n="fundamentals.business.metrics">
+                      <span class="detail-dot"></span>Métricas de rendimiento
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Arquitectura de Datos -->
+            <div class="col-md-6">
+              <div class="card card-hover h-100">
+                <div class="card-body">
+                  <div class="feature-icon">
+                    <i class="fas fa-database"></i>
+                  </div>
+                  <h3 class="card-title h5" data-i18n="fundamentals.data.title">
+                    Arquitectura de Datos
+                  </h3>
+                  <p
+                    class="card-text text-muted"
+                    data-i18n="fundamentals.data.text"
+                  >
+                    Describe la estructura de los datos, cómo se almacenan,
+                    integran y gestionan en la organización. Define los activos
+                    de información críticos.
+                  </p>
+                  <ul class="detail-list">
+                    <li data-i18n="fundamentals.data.models">
+                      <span class="detail-dot"></span>Modelos de datos
+                    </li>
+                    <li data-i18n="fundamentals.data.governance">
+                      <span class="detail-dot"></span>Gobernanza de datos
+                    </li>
+                    <li data-i18n="fundamentals.data.quality">
+                      <span class="detail-dot"></span>Calidad de datos
+                    </li>
+                    <li data-i18n="fundamentals.data.security">
+                      <span class="detail-dot"></span>Seguridad de datos
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Arquitectura de Aplicaciones -->
+            <div class="col-md-6">
+              <div class="card card-hover h-100">
+                <div class="card-body">
+                  <div class="feature-icon">
+                    <i class="fas fa-window-restore"></i>
+                  </div>
+                  <h3
+                    class="card-title h5"
+                    data-i18n="fundamentals.application.title"
+                  >
+                    Arquitectura de Aplicaciones
+                  </h3>
+                  <p
+                    class="card-text text-muted"
+                    data-i18n="fundamentals.application.text"
+                  >
+                    Establece cómo las aplicaciones interactúan entre sí y con
+                    los usuarios finales para apoyar los procesos empresariales.
+                  </p>
+                  <ul class="detail-list">
+                    <li data-i18n="fundamentals.application.portfolio">
+                      <span class="detail-dot"></span>Portafolio de aplicaciones
+                    </li>
+                    <li data-i18n="fundamentals.application.integration">
+                      <span class="detail-dot"></span>Integración de sistemas
+                    </li>
+                    <li data-i18n="fundamentals.application.interfaces">
+                      <span class="detail-dot"></span>Interfaces de usuario
+                    </li>
+                    <li data-i18n="fundamentals.application.services">
+                      <span class="detail-dot"></span>Servicios compartidos
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Arquitectura Tecnológica -->
+            <div class="col-md-6">
+              <div class="card card-hover h-100">
+                <div class="card-body">
+                  <div class="feature-icon">
+                    <i class="fas fa-server"></i>
+                  </div>
+                  <h3
+                    class="card-title h5"
+                    data-i18n="fundamentals.technology.title"
+                  >
+                    Arquitectura Tecnológica
+                  </h3>
+                  <p
+                    class="card-text text-muted"
+                    data-i18n="fundamentals.technology.text"
+                  >
+                    Define la infraestructura tecnológica que soporta las
+                    aplicaciones y datos, incluyendo hardware, software y
+                    comunicaciones.
+                  </p>
+                  <ul class="detail-list">
+                    <li data-i18n="fundamentals.technology.infrastructure">
+                      <span class="detail-dot"></span>Infraestructura de TI
+                    </li>
+                    <li data-i18n="fundamentals.technology.networks">
+                      <span class="detail-dot"></span>Redes y comunicaciones
+                    </li>
+                    <li data-i18n="fundamentals.technology.cloud">
+                      <span class="detail-dot"></span>Plataformas cloud
+                    </li>
+                    <li data-i18n="fundamentals.technology.security">
+                      <span class="detail-dot"></span>Seguridad tecnológica
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ciclo ADM -->
+    <section id="adm">
+      <div
+        class="container min-vh-100 d-flex flex-column align-items-center justify-content-center bg-light"
+      >
+        <div class="col-12 text-end">
+          <a href="#hero" class="btn btn-ea mt-1 mb-1 text-white"
+            >Ir al Inicio</a
+          >
+        </div>
+        <div class="row">
+          <div class="header">
+            <h1>El Ciclo ADM de TOGAF</h1>
+            <p>
+              El Método de Desarrollo de Arquitectura (ADM) proporciona un
+              proceso probado y repetible para desarrollar arquitecturas
+              empresariales.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <span class="material-icons">touch_app</span>
+              <span>Selecciona cada fase para ver más detalles</span>
+            </div>
+            <div class="card-content">
+              <div class="phases-grid" id="phasesGrid">
+                <!-- Las fases se agregarán dinámicamente con JavaScript -->
+              </div>
+            </div>
+          </div>
+
+          <p class="footer-note">
+            El ADM es iterativo, flexible y personalizable. Las organizaciones
+            pueden adaptar y modificar el proceso según sus necesidades
+            específicas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recursos -->
+    <section id="recursos" class="recursos-section">
+      <div class="recursos-container">
+        <div class="col-12 text-end">
+          <a href="#hero" class="btn btn-ea mt-1 mb-1 text-white"
+            >Ir al Inicio</a
+          >
+        </div>
+        <h2 class="recursos-title">Recursos para Comenzar con TOGAF</h2>
+
+        <div class="recursos-grid">
+          <!-- Guía Introductoria -->
+          <div class="recurso-item" onclick="toggleContent('guia')">
+            <div class="recurso-icon">
+              <span class="material-icons">menu_book</span>
+            </div>
+            <h3 class="recurso-title">Guía Introductoria</h3>
+            <div class="recurso-content" id="guia-content">
+              <p>
+                Una guía completa para principiantes en TOGAF. Incluye conceptos
+                básicos, metodología y mejores prácticas.
+              </p>
+              <a href="#" class="download-button">Descargar Guía</a>
+            </div>
+          </div>
+
+          <!-- Whitepaper -->
+          <div class="recurso-item" onclick="toggleContent('whitepaper')">
+            <div class="recurso-icon">
+              <span class="material-icons">description</span>
+            </div>
+            <h3 class="recurso-title">Whitepaper</h3>
+            <div class="recurso-content" id="whitepaper-content">
+              <p>
+                Whitepaper técnico detallando casos de estudio y aplicaciones
+                prácticas de TOGAF en organizaciones.
+              </p>
+              <a href="#" class="download-button">Descargar Whitepaper</a>
+            </div>
+          </div>
+
+          <!-- Infografía -->
+          <div class="recurso-item" onclick="toggleContent('infografia')">
+            <div class="recurso-icon">
+              <span class="material-icons">insights</span>
+            </div>
+            <h3 class="recurso-title">Infografía</h3>
+            <div class="recurso-content" id="infografia-content">
+              <p>
+                Infografía visual que explica el proceso ADM de manera clara y
+                concisa.
+              </p>
+              <a href="#" class="download-button">Ver Infografía</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Sección Sobre TOGAF -->
+          <div class="footer-section">
+            <h3>Sobre TOGAF</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#">
+                  <span class="material-icons">article</span>
+                  Acerca de
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="material-icons">school</span>
+                  Certificaciones
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="material-icons">groups</span>
+                  Comunidad
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Sección Recursos -->
+          <div class="footer-section">
+            <h3>Recursos</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#">
+                  <span class="material-icons">library_books</span>
+                  Documentación
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="material-icons">video_library</span>
+                  Tutoriales
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="material-icons">download</span>
+                  Descargas
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Sección Contacto -->
+          <div class="footer-section">
+            <h3>Contacto</h3>
+            <div class="footer-contact">
+              <span class="material-icons">email</span>
+              enterprise-architecture@gmail.com
+            </div>
+            <div class="footer-contact">
+              <span class="material-icons">phone</span>
+              +54 (11) 3364-9070
+            </div>
+            <div class="footer-social">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f fs-2 text-white"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in fs-2 text-white"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter fs-2 text-white"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-instagram fs-2 text-white"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-youtube fs-2 text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Enterprise Architecture. Todos los Derechos Reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/i18next@22.4.1/i18next.min.js"></script>
+    <!-- JS de Bootstrap (opcional para componentes interactivos) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+      });
+    </script>
+    <script src="/script.js"></script>
+  </body>
+</html>
