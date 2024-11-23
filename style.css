@@ -55,6 +55,43 @@
   border-color: #d39e00;
 }
 
+.dark-mode .container {
+  background-color: #444 !important;
+  color: #fff;
+}
+
+.dark-mode .no-dark {
+  background-color: transparent !important;
+  color: #fff;
+}
+
+.dark-mode .card {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode .phases-grid {
+  background-color: #444 !important;
+  color: #fff !important;
+}
+
+.dark-mode .phase-card {
+  background-color: #444 !important;
+  color: #fff !important;
+}
+
+.dark-mode .recursos-title,
+.dark-mode .recurso-title {
+  color: #fff !important;
+}
+
+.dark-mode .recurso-content {
+  background-color: #757373 !important;
+  color: #fff !important;
+}
+
+/* *** Fin Dark Mode *** */
+
 .hero {
   background: url("/images/fondo.jpeg") no-repeat center center/contain;
   color: white;
@@ -342,6 +379,8 @@
 
 .recurso-content.active {
   display: block;
+  border-color: #0d6efd !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   animation: fadeIn 0.3s ease;
 }
 
