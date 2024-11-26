@@ -65,6 +65,10 @@
   color: #fff;
 }
 
+.dark-mode .text-color {
+  color: #fff;
+}
+
 .dark-mode .card {
   background-color: #444;
   color: #fff;
@@ -144,6 +148,15 @@
     0.1
   ); /* Añade un fondo semitransparente para mejorar la legibilidad */
   border-radius: 8px; /* Añade bordes redondeados para un mejor efecto visual */
+}
+
+/*******/
+.text-color {
+  color: #000090;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .btn-ea {
@@ -246,6 +259,15 @@
 
 .card-content {
   padding: 1.5rem;
+}
+
+.touch {
+  cursor: pointer; /* Cambia el cursor a la manito */
+  transition: transform 0.3s ease; /* Animación suave para el cambio de tamaño */
+}
+
+.touch:hover {
+  transform: scale(1.3); /* Ensancha un 10% */
 }
 
 .phases-grid {
@@ -414,6 +436,16 @@
     grid-template-columns: 1fr;
   }
 }
+/** Consulting **/
+input,
+textarea,
+.form-select {
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.3), 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+/*** Icono Ws *** */
+#icon-ws {
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.5));
+}
 
 /** Footer **/
 .footer {
@@ -482,8 +514,8 @@
 }
 
 .social-icon {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   text-decoration: none;
   background: #374151;
@@ -495,6 +527,10 @@
   color: #ffff;
 
   transform: translateY(-6px);
+}
+
+.fab {
+  margin: 0.3em 0 0 0.35em;
 }
 
 .footer-contact {
@@ -517,12 +553,19 @@
   margin: 0;
 }
 
-@media (max-width: 768px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+/***** Responsive *****/
+/* Para pantallas de tabletas (desde 768px hasta 1024px) */
+@media (max-width: 1024px) {
+  .d-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tabletas */
   }
+}
 
+/* Para pantallas móviles (hasta 768px) */
+@media (max-width: 768px) {
+  .d-grid {
+    grid-template-columns: 1fr; /* 1 columna en móviles */
+  }
   .footer-section {
     text-align: center;
   }
@@ -610,9 +653,6 @@
   }
   .card i {
     font-size: 3rem;
-  }
-  .d-grid {
-    grid-template-columns: repeat(1, 1fr) !important;
   }
 
   .footer-contact {
