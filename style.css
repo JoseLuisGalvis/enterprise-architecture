@@ -228,6 +228,7 @@
 
 .card-content {
   padding: 1.5rem;
+  overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
 }
 
 .touch {
@@ -241,8 +242,12 @@
 
 .phases-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Reducimos de 300px a 250px */
   gap: 1rem;
+  width: 100%;
 }
 
 .phase-card {
@@ -253,6 +258,7 @@
   transition: all 0.3s ease;
   border: 1px solid #e5e7eb;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  min-width: 0; /* Evita que el contenido interno fuerce un ancho mayor */
 }
 
 .phase-card:hover {
@@ -288,6 +294,38 @@
   color: var(--gray-500);
   font-size: 0.875rem;
   margin-top: 2rem;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .phases-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(200px, 1fr)
+    ); /* Más pequeño en tabletas */
+  }
+
+  .phase-card {
+    padding: 0.75rem; /* Reducimos padding en pantallas pequeñas */
+  }
+
+  .phase-card h3 {
+    font-size: 1rem; /* Ajustamos tamaño de fuente */
+  }
+
+  .phase-description {
+    font-size: 0.75rem; /* Texto más pequeño para mejor ajuste */
+  }
+}
+
+@media (max-width: 576px) {
+  .phases-grid {
+    grid-template-columns: 1fr; /* Una sola columna en móviles */
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
 }
 
 /* Sección: Recursos */
