@@ -1,26 +1,25 @@
+/* Sección: Navbar */
 .navbar-logo {
   width: 4em;
   height: 3em;
   margin-right: 1em;
 }
 
-/* Cambiar color del texto del navbar a azul */
 .navbar .navbar-text,
 .navbar .nav-link {
   color: #000090;
   padding: 0;
 }
 
-/* Cambiar el color al pasar el mouse */
 .navbar .navbar-text:hover,
 .navbar .nav-link:hover {
-  color: rgb(5, 131, 34) !important; /* Azul más oscuro al hacer hover */
+  color: rgb(5, 131, 34) !important;
   font-weight: 700;
-  text-shadow: 0 0 10px rgb(5, 131, 34, 0.3), 0 0 20px rgb(5, 131, 34, 0.4),
-    0 0 30px rgb(5, 131, 34, 0.5);
+  text-shadow: 0 0 10px rgba(5, 131, 34, 0.3), 0 0 20px rgba(5, 131, 34, 0.4),
+    0 0 30px rgba(5, 131, 34, 0.5);
 }
 
-/* Estilos para el modo oscuro */
+/* Sección: Modo Oscuro (Dark Mode) */
 .dark-mode {
   background-color: #333;
   color: #fff;
@@ -36,10 +35,7 @@
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
 }
 
-.navbar-dark-mode .navbar-text {
-  color: #fff;
-}
-
+.navbar-dark-mode .navbar-text,
 .navbar-dark-mode .nav-link {
   color: #fff;
 }
@@ -65,28 +61,19 @@
   color: #fff;
 }
 
-.dark-mode .text-color {
-  color: #fff;
-}
-
-.dark-mode .card {
-  background-color: #444;
-  color: #fff;
-}
-
-.dark-mode .phases-grid {
-  background-color: #444 !important;
-  color: #fff !important;
-}
-
-.dark-mode .phase-card {
-  background-color: #444 !important;
-  color: #fff !important;
-}
-
+.dark-mode .text-color,
+.dark-mode .card,
+.dark-mode .phases-grid,
+.dark-mode .phase-card,
 .dark-mode .recursos-title,
 .dark-mode .recurso-title {
   color: #fff !important;
+}
+
+.dark-mode .card,
+.dark-mode .phases-grid,
+.dark-mode .phase-card {
+  background-color: #444 !important;
 }
 
 .dark-mode .recurso-content {
@@ -94,8 +81,7 @@
   color: #fff !important;
 }
 
-/* *** Fin Dark Mode *** */
-
+/* Sección: Hero */
 .hero {
   background: url("/images/fondo.jpeg") no-repeat center center/contain;
   color: white;
@@ -127,30 +113,20 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Ajusta el valor de la opacidad según tus necesidades */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 
 .elevation {
   position: relative;
-  z-index: 1; /* Asegúrate de que este valor sea mayor que el z-index del overlay */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra para el efecto de elevación */
-  padding: 20px; /* Añade un poco de padding para mejorar la apariencia */
-  background: rgba(
-    255,
-    255,
-    255,
-    0.1
-  ); /* Añade un fondo semitransparente para mejorar la legibilidad */
-  border-radius: 8px; /* Añade bordes redondeados para un mejor efecto visual */
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
 }
 
-/*******/
+/* Sección: Definición y Beneficios (Estilos Generales) */
 .text-color {
   color: #000090;
 }
@@ -173,14 +149,14 @@
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
-  background-color: rgb(0, 0, 144, 0.1);
+  background-color: rgba(0, 0, 144, 0.1);
 }
 
 .card i {
   font-size: 4rem;
 }
 
-/***********/
+/* Sección: Fundamentos */
 .feature-icon {
   width: 4rem;
   height: 4rem;
@@ -222,8 +198,7 @@
   align-items: center;
 }
 
-/* ADM */
-
+/* Sección: Ciclo ADM */
 .header {
   text-align: center;
   margin-bottom: 2rem;
@@ -242,12 +217,6 @@
   margin: 0 auto;
 }
 
-.card {
-  background: white;
-  border-radius: 0.5rem;
-  margin-bottom: 2rem;
-}
-
 .card-header {
   background: var(--primary-light);
   padding: 1rem;
@@ -262,12 +231,12 @@
 }
 
 .touch {
-  cursor: pointer; /* Cambia el cursor a la manito */
-  transition: transform 0.3s ease; /* Animación suave para el cambio de tamaño */
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .touch:hover {
-  transform: scale(1.3); /* Ensancha un 10% */
+  transform: scale(1.3);
 }
 
 .phases-grid {
@@ -288,9 +257,6 @@
 
 .phase-card:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
-}
-
-.phase-card:hover {
   background: var(--primary-light);
 }
 
@@ -324,7 +290,7 @@
   margin-top: 2rem;
 }
 
-/* Recursos */
+/* Sección: Recursos */
 .recursos-container {
   min-height: 100vh;
   background: white;
@@ -432,18 +398,18 @@
   background: #1d4ed8;
 }
 
-/** Consulting **/
+/* Sección: Consulting */
 input,
 textarea,
 .form-select {
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.3), 0 3px 6px rgba(0, 0, 0, 0.3);
 }
-/*** Icono Ws *** */
+
 #icon-ws {
   filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.5));
 }
 
-/** Footer **/
+/* Sección: Footer */
 .footer {
   background: #1f2937;
   color: #f3f4f6;
@@ -520,8 +486,7 @@ textarea,
 
 .social-icon:hover {
   background: #2563eb;
-  color: #ffff;
-
+  color: #fff;
   transform: translateY(-6px);
 }
 
@@ -551,95 +516,142 @@ textarea,
 
 /***** Responsive *****/
 
-/* Estilos generales para pantallas grandes (por ejemplo, escritorios) */
-.d-grid {
+/* Estilos generales */
+.d-grid,
+.footer-grid,
+.phases-grid,
+.recursos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
-  gap: 1rem; /* Espaciado entre elementos */
+  gap: 1rem;
 }
-/* Para pantallas de tabletas (desde 768px hasta 1024px) */
+.d-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+.phases-grid,
+.recursos-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Tabletas (hasta 1024px) */
 @media (max-width: 1024px) {
   .d-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tabletas */
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
   }
 }
 
-/* Para pantallas móviles (hasta 768px) */
+/* Móviles (hasta 768px) */
 @media (max-width: 768px) {
-  .d-grid {
-    grid-template-columns: 1fr; /* 1 columna en móviles */
+  /* General */
+  .d-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
   }
-  .footer-section {
+  .navbar-collapse {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.75rem 1rem;
+  }
+  .d-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  #darkModeToggle,
+  #languageSelector {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Hero */
+  #hero h1 {
+    font-size: 1.5rem;
+  }
+  #hero p {
+    font-size: 1rem;
+  }
+  #hero .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Definición */
+  #definicion img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 1rem;
+  }
+  #definicion p {
+    padding: 0 1rem;
+  }
+
+  /* Beneficios */
+  .card i {
+    font-size: 2rem;
+  }
+
+  /* Fundamentos */
+  #fundamentos .card {
+    margin-bottom: 1rem;
+  }
+  #fundamentos .feature-icon i {
+    font-size: 2rem;
+  }
+
+  /* Recursos */
+  .recurso-item {
     text-align: center;
   }
 
+  /* Consulting */
+  #consulting .consulting-form {
+    padding: 0 1rem;
+  }
+  #consulting .form-control,
+  #consulting .form-select {
+    font-size: 0.9rem;
+  }
+  #icon-ws {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Footer */
+  .footer-section {
+    text-align: center;
+  }
   .footer-section h3::after {
     left: 50%;
     transform: translateX(-50%);
   }
-
   .footer-links a {
     justify-content: center;
   }
-
   .footer-social {
     display: flex;
     gap: 1rem;
     margin-top: 1.5rem;
+    justify-content: center;
   }
-
   .social-icon {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background: #374151;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    color: #fff;
-    text-decoration: none;
   }
-
-  .social-icon:hover {
-    background: #2563eb;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
-  }
-
-  /* Estilos específicos para cada red social al hover */
-  .social-icon:hover .fa-facebook-f {
-    color: #1877f2;
-  }
-
-  .social-icon:hover .fa-linkedin-in {
-    color: #0a66c2;
-  }
-
-  .social-icon:hover .fa-twitter {
-    color: #1da1f2;
-  }
-
-  .social-icon:hover .fa-instagram {
-    color: #e4405f;
-  }
-
-  .social-icon:hover .fa-youtube {
-    color: #ff0000;
-  }
-
-  /* Tamaño de los íconos */
-  .social-icon i {
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
-  }
-
   .footer-contact {
     justify-content: center;
   }
 }
-/* Responsive */
-@media screen and (max-width: 320px) {
+
+/* Pantallas muy pequeñas (hasta 320px) */
+@media (max-width: 320px) {
   .navbar-logo {
     width: 2.5em;
     height: 2em;
@@ -657,7 +669,6 @@ textarea,
   .card i {
     font-size: 3rem;
   }
-
   .footer-contact {
     font-size: 0.8em;
   }
